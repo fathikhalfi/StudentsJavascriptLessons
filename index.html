@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson 1</title>
+</head>
+<body>
+    <script>
+       document.write(Number.MAX_VALUE + "<br>");
+       document.write(Number.MIN_VALUE + "<br>");
+       var samp_str ="Here are some escaped characters: \" \' \\ \t \n";
+       document.write(samp_str + "<br>");
+       //Declare variables in Javascript
+       var first_str = "First string";
+       var second_str = " Second string";
+       var combined_str = first_str + second_str;
+       document.write(combined_str + "<br>");
+       document.write("length of string: " + combined_str.length +"<br>");
+       document.write("Sbustring: " + combined_str.substring(6,12)+"<br>");
+       document.write("Last character: " + combined_str.charAt(combined_str.length-1) + "<br>");
+       document.write("Index of letter 't': "+ combined_str.indexOf('t') + "<br>");
+       //Assign values to variables
+       var str_num ="5";
+       var int_num = 10;                
+       var total = str_num + int_num;
+       var mult_total = str_num * int_num;
+       document.write("5 + 10 = " + total + "<br>");
+       document.write(" 5 x 10 = " + mult_total + "<br>");
+       //Convert string to a number 
+       var newTotal = int_num + Number(str_num);
+       document.write("Converted Total = " + newTotal + "<br>");
+       //Convert number to string
+       var stTotal = str_num + String(int_num);
+       document.write("Converted Number: " + stTotal + "<br>");
+       var float_num = 3.1415927896599;
+       var float_fix=  float_num.toFixed(5);
+       document.write("Predefined function : toFixed = " + float_fix + "<br>");
+       document.write("Predefined function: parseint = " + parseInt(float_num ) + "<br>");
+       document.write("Predefined function : Typeof = " + typeof(float_num)+ "<br>");
+       var bool_var = Boolean(23);
+       document.write("Boolean of 23 is : " + bool_var + "<br>");
+       var rand_num1 = 5;
+       var rand_num2 = 10;
+       //Comparison operators
+       document.write("Is 5 > 10 " + (rand_num1> rand_num2) + "<br>");
+       document.write("Is 5 >= 10 " + (rand_num1>= rand_num2) + "<br>");
+       document.write("Is 5 < 10 " + (rand_num1< rand_num2) + "<br>");
+       document.write("Is 5 <= 10 " + (rand_num1<= rand_num2) + "<br>");
+       document.write("Is 5 == 10 " + (rand_num1== rand_num2) + "<br>");
+       document.write("Is 5 != 10 " + (rand_num1!= rand_num2) + "<br>");
+       //Logical operators
+       document.write("Is 5 < 10 and 5 !=10 " + ((rand_num1 < rand_num2) && (rand_num1 != rand_num2)) + "<br>");
+       document.write("Is 5 > 10 and 5 !=10 " + ((rand_num1 > rand_num2) || (rand_num1 != rand_num2)) + "<br>");
+       document.write("Is 5 < 10 " + !(rand_num1 < rand_num2) + "<br>");
+       //Arrays//
+       var vehicles = new Array("Sedan","Hatchback","Pickup","SUV","Convertible");
+       document.write("The vehicle in the 3 index is: " + vehicles[3]+ "<br>");
+       //Loop through the array
+       for (i in vehicles)
+       {
+           document.write("The vehicles are: " + vehicles[i] + "<br>");
+       }
+       //Conditional operators
+
+
+
+       
+
+
+
+
+
+
+
+
+    </script>
+    <noscript>
+        <h3>This page rquires Javascript !!</h3>
+    </noscript>
+</body>
+</html>
